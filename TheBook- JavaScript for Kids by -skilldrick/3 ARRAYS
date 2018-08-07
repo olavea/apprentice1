@@ -16,3 +16,57 @@ var dinosaur9 = "Compsognathus";
 [];
 
 var dinosaurs = ["T-Rex", "Velociraptor", "Stegosaurus", "Triceratops", "Brachiosaurus", "Pteranodon", "Apatosaurus", "Diplodocus", "Compsognathus"];
+
+// page 42
+var dinosaurs = [
+    "T-Rex",
+    "Velociraptor",
+    "Stegosaurus",
+    "Triceratops",
+    "Brachiosaurus",
+    "Pteranodon",
+    "Apatosaurus",
+    "Diplodocus",
+    "Compsognathus"
+  ];
+
+dinosaurs[0];
+
+dinosaurs[3];
+
+// page 43
+
+dinosaurs[0];
+
+dinosaurs[0] = "Tyrant Rex";
+
+var dinosaurs = [
+    "Tyrant Rex",
+    "Velociraptor",
+    "Stegosaurus",
+    "Triceratops",
+    "Brachiosaurus",
+    "Pteranodon",
+    "Apatosaurus",
+    "Diplodocus",
+    "Compsognathus"
+];
+
+
+
+// page 44
+
+var dinosaurs = [];
+dinosaurs[0] = "T-Rex";
+dinosaurs[1] = "Velociraptor";
+dinosaurs[2] = "Stegosaurus";
+dinosaurs[3] = "Triceratops";
+dinosaurs[4] = "Brachiosaurus";
+dinosaurs[5] = "Pteranodon";
+dinosaurs[6] = "Apatosaurus";
+dinosaurs[7] = "Diplodocus";
+dinosaurs[8] = "Compsognathus";
+dinosaurs;
+// ["T-Rex", "Velociraptor", "Stegosaurus", "Triceratops", "Brachiosaurus", "Pteranodon", "Apatosaurus", "Diplodocus", "Compsognathus"]
+
+dinosaurs[33] = "Aureliusraptor";
