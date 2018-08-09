@@ -1,0 +1,43 @@
+# Pseudo code
+
+1.  Fetch the oembed provider list.
+2.  Find link nodes in markdown structure that are on their own, not part of some other content.
+3.  Check if url matched any of the oembed url schemes.
+4.  Fetch the oembed response from the oembed provider.
+5.  Transform the link node into an html node using html value from the oembed response.
+
+# 
+
+
+# Pseudo code plus code
+
+1. Fetch the oembed provider list.
+index.js
+const providers = await fetchOembedProviders();
+helpers.js
+const OEMBED_PROVIDERS_URL = "https://oembed.com/providers.json";
+
+exports.fetchOembedProviders = async () => {
+  const response = await axios.get(OEMBED_PROVIDERS_URL);
+  return response.data;
+};
+
+
+
+2. Find link nodes in markdown structure that are on their own, not part of some other content.
+  const possibleOmbedUrlNodes = selectPossibleOembedLinkNodes(markdownAST);
+
+  return processNodes(possibleOmbedUrlNodes, providers);
+};
+
+const processNodes = (nodes, providers) => {
+  return Promise.all(nodes.map(node => processNode(node, providers)));
+};
+
+// For each node this is the process
+const processNode = async (node, providers) => {
+
+3. Check if url matched any of the oembed url schemes.
+4. Fetch the oembed response from the oembed provider.
+5. Transform the link node into an html node using html value from the oembed response.
+};
